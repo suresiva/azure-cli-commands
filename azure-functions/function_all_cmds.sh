@@ -7,7 +7,7 @@ func templates list -l python
 # executed under a directory
 func init --worker-runtime python --language python
 
-# to create a function into the current function app directory
+# to create a Durable trigger function into the current function app directory from template
 func function -n trial-input-trigger -l python -t 'Durable Functions HTTP starter'
 
 
