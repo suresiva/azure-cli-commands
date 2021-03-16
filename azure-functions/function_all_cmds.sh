@@ -8,8 +8,10 @@ func templates list -l python
 func init --worker-runtime python --language python
 
 # to create a Durable trigger function into the current function app directory from template
-func function -n trial-input-trigger -l python -t 'Durable Functions HTTP starter'
+func function new -n trial-input-trigger -l python -t 'Durable Functions HTTP starter'
 
+# to create a Durable Orchestrator function from template
+func function new -n trial-func-orchestrator -l python -t 'Durable Functions orchestrator'
 
 # to start a azure function app
 func host start
