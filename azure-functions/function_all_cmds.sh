@@ -13,5 +13,8 @@ func function new -n trial-input-trigger -l python -t 'Durable Functions HTTP st
 # to create a Durable Orchestrator function from template
 func function new -n trial-func-orchestrator -l python -t 'Durable Functions orchestrator'
 
+# to create a Durable Activity function from template
+func function new -n file-handle-activity -l python -t 'Durable Functions activity'
+
 # to start a azure function app
 func host start
