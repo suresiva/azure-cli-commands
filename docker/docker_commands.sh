@@ -4,6 +4,13 @@ docker login <account-name>
 #login into a jfrog artifactory host
 docker login <account-name>.jfrog.io
 
+#to pull a image from remote repo
+docker pull <repo-name>/<DOCKER_REPOSITORY>:<DOCKER_TAG>
+
+#to push a local image to remote repo
+docker tag <local-image-id> <repo-name>/<DOCKER_REPOSITORY>:<DOCKER_TAG>
+docker tag <local-image-name>:<local-image-version> <repo-name>/<DOCKER_REPOSITORY>:<DOCKER_TAG>
+
 #list docker images
 docker images
 
