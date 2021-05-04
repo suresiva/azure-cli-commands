@@ -4,6 +4,9 @@ docker login <account-name>
 #login into a jfrog artifactory host
 docker login <account-name>.jfrog.io
 
+#login with username, password and repo in same command
+docker login -u <user-name> -p <password> <account-name>
+
 #to pull a image from remote repo
 docker pull <repo-name>/<DOCKER_REPOSITORY>:<DOCKER_TAG>
 
@@ -29,3 +32,6 @@ docker run <image-name>:<latest/version>
 docker run -it <image-name>:<latest/version>
 #with environment variables
 docker run -it -e <env-var-name>='<env-var-value>' <image-name>:<latest/version>
+
+# to push image to remote repository
+docker image push <image-name>:<latest/version>
