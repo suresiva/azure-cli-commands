@@ -19,3 +19,10 @@ func function new -n file-handle-activity -l python -t 'Durable Functions activi
 
 # to start a azure function app
 func host start
+
+
+# to create app service plan
+az functionapp plan create --resource-group rg1 --name app-plan1 --location eastus2 --number-of-workers 1 --sku EP1 --is-linux
+
+# to create function app with custom base docker image
+az functionapp create --name app1 --storage-account sa1 --resource-group rg1 --plan plan1 --runtime python --deployment-container-image-name repo1/image1:latest
