@@ -5,7 +5,7 @@ curl "https://adb-5976206041442815.15.azuredatabricks.net/api/2.0/clusters/list"
       
 # new instance pool
 curl "https://adb-5976206041442815.15.azuredatabricks.net/api/2.0/instance-pools/create" \
-      -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer dapidf80136cd0bab975c0f8dc1b225b31b7' \
+      -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer <>' \
       -d @pool_new_1.json
 # message payload
 {
