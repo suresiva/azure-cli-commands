@@ -1,10 +1,10 @@
 # to list clusters
-curl "https://adb-5976206041442815.15.azuredatabricks.net/api/2.0/clusters/list" \
+curl "https://<databricks-host>/api/2.0/clusters/list" \
       -X GET -H 'Authorization: Bearer <>' | jq
       
       
 # new instance pool
-curl "https://adb-5976206041442815.15.azuredatabricks.net/api/2.0/instance-pools/create" \
+curl "https://<databricks-host>/api/2.0/instance-pools/create" \
       -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer <>' \
       -d @pool_new_1.json
 # message payload
